@@ -367,6 +367,50 @@ main { flex-grow: 1;}
  * Secondary tab
  */
 
+ .tab-list{
+  display: flex;
+  color: var(--on-background-variant);
+  box-shadow: inset 0 -1px 0 var(--outline);
+  overflow-x: auto;
+  scrollbar-width: none;
+ }
+
+ .tab-list::-webkit-scrollbar {display: none;}
+
+ .tab-btn{
+  height: 48px;
+  padding-inline: 24px;
+  border-block-end: 5px solid transparent;
+  transition: var(--transition-timing-function);
+  flex: 1 0 80px;
+ }
+
+ .has-state:hover{
+  color: #c9ee89;
+  transition: 400ms;
+ }
+
+ .tab-btn[area-selected="true"] {
+  color: var(--on-background);
+  border-color: #c9ee89;
+ }
+
+ .active{
+  border-bottom: 2px solid #c9ee89;
+  transition: 0.5 ease
+ }
+
+ .tab-list{
+  box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.15);
+  -webkit-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: -1px 5px 5px 0px rgba(0,0,0,0.15);
+ }
+
+ .icon-btn:hover{
+  background-color: rgb(125, 129, 118) !important;
+ }
+
+
 
 /**
  * Card
@@ -511,9 +555,14 @@ span.material-symbols-outlined.light-icon {
   height: var(--mobile-nav-height);
   background-color: #c9ee89;
   color: var(--on-background-variant);
-  padding-block: 12px 16px;
+  /* padding-block: 12px 16px; */
   z-index: 4px;
   box-shadow: var(--shadow-1);
+}
+
+.nav-link{
+  height: 80px;
+  padding-top: 15px;
 }
 
 .mobile-nav .nav-list{
@@ -555,7 +604,96 @@ button.icon-btn.theme-switch.has-state {
 /*-----------------------------------*\
   #HERO
 \*-----------------------------------*/
+.hero{
+  padding-inline: 16px;
+}
 
+.banner-card{
+  color: whitesmoke;
+  background-image: url(/assets/images/pexels-ella-olsson-1640773.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 488px;
+  display: grid;
+  grid-template-columns: 1fr;
+  place-content: center;
+  text-align: center;
+  border-radius: var(--radius-8);
+
+}
+
+.overlay{
+  background-color: black;
+  opacity: 0.6;
+  width: 100%;
+  height: 100%;
+  padding: 176px;
+}
+
+
+
+
+.hero .search-wrapper{
+  position: relative;
+  color: var(--on-background);
+  border-radius: var(--radius-4);
+  max-width: 400px;
+  width: 100%;
+  margin-inline: auto;
+  margin-block: 16px 12px;
+  overflow: hidden;
+}
+
+.hero .search-wrapper .leading-icon{
+  position: absolute;
+  top: 50%;
+  left: 16px;
+  transform: translateY(-50%);
+}
+
+.search-field{
+  height: 56px;
+  background-color: #eef8de;
+  padding-inline: 56px;
+  outline: none;
+}
+
+.leading-icon{
+  color: #131510;
+}
+
+.search-submit{
+  position: absolute;
+  top: 4px;
+  right: 4px;
+  bottom: 4px;
+  width: 48px;
+  display: grid;
+  place-items: center;
+  background-color: #c9ee89;
+  color: #131510;
+  border-radius: var(--radius-4);
+  transition: var(--transition-timing-function);
+}
+
+.search-submit:hover{
+  background-color: rgb(90, 97, 77);
+  color: white;
+  transition: 400ms;
+}
+
+a.nav-link {
+  width: 40%;
+  margin: 0 auto;
+}
+
+
+.nav-link:hover{
+  background-color: rgb(125, 129, 118);
+  color: white;
+  transition: 400ms;
+}
 
 
 

@@ -103,28 +103,52 @@
         <article>
             <!-- Home Page -->
             <section class="hero" aria-label="banner">
-                <div class="banner-card">
-                    <h1 class="display-large">
-                        Find Your Healthy Recpies
-                    </h1>
-
-                    <div class="search-wrapper" data-search-form>
-                        <span class="material-symbols-outlined leading-icon" aria-hidden="true">
-                            local_dining
-                        </span>
-
-                        <input type="text" name="search" aria-label="Search Recipes" 
-                        placeholder="Search recipes..." class="search-field body-medium">
-
-                        <button class="search-submit" aria-label="search button" data-search-btn>
-                            <span class="material-symbols-outlined" aria-hidden="true">
-                                search
-                            </span>
-                        </button>
+                
+                    <div class="banner-card">
+                        <div class="overlay">
+                            <h1 class="display-large">
+                                Find Your Healthy Recpies
+                            </h1>
+        
+                            <div class="search-wrapper" data-search-form>
+                                <span class="material-symbols-outlined leading-icon" aria-hidden="true">
+                                    local_dining
+                                </span>
+        
+                                <input type="text" name="search" aria-label="Search Recipes" 
+                                placeholder="Search recipes..." class="search-field body-medium">
+        
+                                <button class="search-submit" aria-label="search button" data-search-btn>
+                                    <span class="material-symbols-outlined" aria-hidden="true">
+                                        search
+                                    </span>
+                                </button>
+                            </div>
+                            <p class="label-medium">
+                                Search any healthy recipes loaded with nutrition e.g chipotle bowl, salad, stir fry, salmon
+                            </p>
+                        </div>
+                        
                     </div>
-                    <p class="label-medium">
-                        Search any healthy recipes loaded with nutrition e.g chipotle bowl, salad, stir fry, salmon
-                    </p>
+                
+            </section>
+
+
+            <section class="section tab">
+                <div class="container">
+                    <div class="tab-list" data-tab-list>
+                        <button class="tab-btn active title-small has-state" aria-selected="false" role="tab" id="tab-1" tabindex="0">Breakfast</button>
+                        <button class="tab-btn title-small has-state" aria-selected="false" role="tab" id="tab-1" tabindex="-1">Lunch</button>
+                        <button class="tab-btn title-small has-state" aria-selected="false" role="tab" id="tab-1" tabindex="0">Dinner</button>
+                        <button class="tab-btn title-small has-state" aria-selected="false" role="tab" id="tab-1" tabindex="0">Snack</button>
+                        <button class="tab-btn title-small has-state" aria-selected="false" role="tab" id="tab-1" tabindex="0">Teas</button>
+                    </div>
+
+                <div class="tab-panel" tab-index="0" data-tab-list role="tablist" id="panel-1"></div>              
+                <div class="tab-panel" tab-index="0" data-tab-list role="tablist" id="panel-2"></div>              
+                <div class="tab-panel" tab-index="0" data-tab-list role="tablist" id="panel-3"></div>              
+                <div class="tab-panel" tab-index="0" data-tab-list role="tablist" id="panel-4"></div>              
+                <div class="tab-panel" tab-index="0" data-tab-list role="tablist "id="panel-5"></div>              
                 </div>
             </section>
         </article>
