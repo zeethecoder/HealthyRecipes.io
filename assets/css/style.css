@@ -396,7 +396,7 @@ main { flex-grow: 1;}
  }
 
  .active{
-  border-bottom: 2px solid #c9ee89;
+  border-bottom: 5px solid #c9ee89;
   transition: 0.5 ease
  }
 
@@ -611,6 +611,7 @@ button.icon-btn.theme-switch.has-state {
 .banner-card{
   color: whitesmoke;
   background-image: url(/assets/images/pexels-ella-olsson-1640773.jpg);
+  box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.3);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -622,15 +623,6 @@ button.icon-btn.theme-switch.has-state {
   border-radius: var(--radius-8);
 
 }
-
-.overlay{
-  background-color: black;
-  opacity: 0.6;
-  width: 100%;
-  height: 100%;
-  padding: 176px;
-}
-
 
 
 
@@ -690,19 +682,61 @@ a.nav-link {
 
 
 .nav-link:hover{
+  
+}
+
+.item-icon:hover{
   background-color: rgb(125, 129, 118);
   color: white;
   transition: 400ms;
 }
 
+.section { margin-block-end: var(--section-gap);}
 
+.container{
+  max-width: 100%;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 16px;
+}
+
+span.material-symbols-outlined.search-delete {
+  margin: 0 auto;
+  position: relative;
+  top: 55px;
+  color: black;
+  z-index: 1;
+  right: -18vh;
+}
+
+span.material-symbols-outlined.search-delete:hover{
+  cursor: pointer;
+}
+
+.search-delete{
+  display: none ;
+}
+
+span.material-symbols-outlined.search-delete {
+  margin-top: -25px;
+}
 
 
 /*-----------------------------------*\
   #TAB
 \*-----------------------------------*/
+.tab .tab-list{
+  background-color: var(--background);
+  position: sticky;
+  top: var(--header-height);
+  margin-inline: -16px;
+  padding-inline: 16px;
+  margin-block: 16px 12px;
+  z-index: 1;
+}
 
-
+.tab-panel[hidden] { display: none;}
+ 
 
 
 
