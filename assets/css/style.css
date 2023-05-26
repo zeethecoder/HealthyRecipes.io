@@ -570,7 +570,7 @@ span.material-symbols-outlined.light-icon {
 /* MOBILE NAV */
 
 .mobile-nav {
-  position: absolute;
+  position: fixed;
   bottom: 0;
   left: 0;
   width: 100%;
