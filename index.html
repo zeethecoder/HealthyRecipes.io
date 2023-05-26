@@ -138,19 +138,60 @@
             <section class="section tab">
                 <div class="container">
                     <div class="tab-list" data-tab-list>
-                        <button aria-controls="panel-1"class="tab-btn active title-small has-state" data-tab-btn aria-selected="false"
-                            role="tab" id="tab-1" tabindex="0">Breakfast</button>
-                        <button aria-controls="panel-2"class="tab-btn title-small has-state" data-tab-btn aria-selected="false" role="tab"
-                            id="tab-1" tabindex="-1">Lunch</button>
-                        <button aria-controls="panel-3"class="tab-btn title-small has-state" data-tab-btn aria-selected="false" role="tab"
-                            id="tab-1" tabindex="0">Dinner</button>
-                        <button aria-controls="panel-4"class="tab-btn title-small has-state" data-tab-btn aria-selected="false" role="tab"
-                            id="tab-1" tabindex="0">Snack</button>
-                        <button aria-controls="panel-5"class="tab-btn title-small has-state" data-tab-btn aria-selected="false" role="tab"
-                            id="tab-1" tabindex="0">Teas</button>
+                        <button aria-controls="panel-1" class="tab-btn active title-small has-state" data-tab-btn
+                            aria-selected="false" role="tab" id="tab-1" tabindex="0">Breakfast</button>
+                        <button aria-controls="panel-2" class="tab-btn title-small has-state" data-tab-btn
+                            aria-selected="false" role="tab" id="tab-1" tabindex="-1">Lunch</button>
+                        <button aria-controls="panel-3" class="tab-btn title-small has-state" data-tab-btn
+                            aria-selected="false" role="tab" id="tab-1" tabindex="0">Dinner</button>
+                        <button aria-controls="panel-4" class="tab-btn title-small has-state" data-tab-btn
+                            aria-selected="false" role="tab" id="tab-1" tabindex="0">Snack</button>
+                        <button aria-controls="panel-5" class="tab-btn title-small has-state" data-tab-btn
+                            aria-selected="false" role="tab" id="tab-1" tabindex="0">Teas</button>
                     </div>
 
-                    <div class="tab-panel" tab-index="0" data-tab-panel role="tablist" id="panel-1">Breakfast
+                    <div class="tab-panel" tab-index="0" data-tab-panel role="tablist" id="panel-1">
+                        <div class="grid-list">
+
+                            <div class="card skeleton-card">
+                                <div class="skeleton-banner"></div>
+                                <div class="card-body">
+                                    <div class="skeleton card-title"></div>
+
+                                    <div class="skeleton card-text"></div>
+
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <figure class="card-media img-holder">
+                                    <img src="./assets/images/recipe.jpg" alt="" srcset="" height="200" loading="lazy"
+                                        width="200" class="img-cover">
+                                </figure>
+
+                                <div class="card-body">
+                                    <h3 class="title-small">
+                                        <a href="./detail.html" class="card-link">Recipe Name</a>
+                                    </h3>
+                                    <div class="meta-wrapper">
+                                        <div class="meta-item">
+                                            <span class="material-symbols-outlined leading-icon" aria-hidden="true">
+                                                schedule
+                                            </span>
+
+                                            <span class="label-medium">2 minutes</span>
+                                            <button class="icon-btn removed" aria-label="Add to Saved Recipes">
+                                                <span class="material-symbols-outlined bookmark-add"
+                                                    aria-hidden="true">bookmark_add</span>
+                                                <span class="material-symbols-outlined bookmark"
+                                                    aria-hidden="true">bookmark</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="./recipes.html" class="btn btn-secondary label-large">Show More</a>
                     </div>
 
                     <div class="tab-panel" tab-index="0" data-tab-panel role="tablist" id="panel-2" hidden>Lunch
