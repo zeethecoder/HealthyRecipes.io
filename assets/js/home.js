@@ -54,14 +54,20 @@ let [$lastActiveTabPanel] = $tabPanels;
 let [$lastActiveTabBtn] = $tabBtns;
 
 
-// addEventOnElements($tabBtns, 'click', function () {
-//   $lastActiveTabPanel.setAttribute("hidden", "");
-//   $lastActiveTabBtn.setAttribute("aria-selected", "false");
-//   $lastActiveTabBtn.setAttribute('tabindex', -1);
+addEventOnElements($tabBtns, 'click', function () {
+  $lastActiveTabPanel.setAttribute("hidden", "");
+  $lastActiveTabBtn.setAttribute("aria-selected", "false");
+  $lastActiveTabBtn.setAttribute('tabindex', -1);
 
-//   const $currentTabPanel = document.querySelector(`#${this.getAttribute("aria-controls")}`);
-  
-// });
+  const $currentTabPanel = document.querySelector(`#${this.getAttribute("aria-controls")}`);
+  console.log($currentTabPanel)
+  $currentTabPanel.removeAttribute('hidden');
+  this.setAttribute('aria-selected', 'true');
+  this.setAttribute('tabindex', 0);
+
+  $lastActiveTabPanel = $currentTabPanel;
+  $lastActiveTabBtn = this;
+});
 
 
 
